@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=200&section=header&text=Vivaldi&fontSize=70&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Software%20Engineer%20%7C%20DevOps%20Analyst&descAlignY=55&descSize=18" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=200&section=header&text=Vivaldi&fontSize=70&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Solutions%20Architect&descAlignY=55&descSize=20" width="100%" />
 
 <a href="https://github.com/VivaldiCode">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Building+and+shipping+software;Containers%2C+pipelines+and+automation;Full-stack+with+a+DevOps+mindset" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=650&lines=Designing+systems+end+to+end;Distributed+AI%2C+data+pipelines+and+infrastructure;From+architecture+to+production" alt="Typing SVG" />
 </a>
 
 <br />
@@ -18,15 +18,18 @@
 
 ## 👋 About me
 
-I'm **Vivaldi**, a Software Engineer and DevOps Analyst based in Portugal.
+I'm **Vivaldi**, a **Solutions Architect** based in Portugal.
 
-I work across the whole delivery path — writing the application, containerising it, and getting it into production reliably. I'm especially interested in the unglamorous parts that make everything else possible: build pipelines, reproducible environments, and running modern infrastructure on constrained hardware.
+I design systems end to end — the architecture, the services that implement it, and the infrastructure that keeps it running. Most of my work sits where several concerns meet at once: distributed AI inference, real-time data ingestion, self-hosted platforms, and making all of it observable and reproducible.
 
-- 🔧 I build **full-stack applications** and the **CI/CD** that ships them
-- 🐳 I spend a lot of time in **Docker**, **Linux** and **automation**
-- 🍓 I like making heavy software run on small machines — see [`kafka-armv7`](https://github.com/VivaldiCode/kafka-armv7)
-- 🤖 Off-hours I tinker with **3D printing and robotics**
-- 🌍 I work in **Portuguese** and **English**
+I care about solutions that people can actually run. That means open source by default, sensible defaults, documented deployment paths, and software that doesn't assume unlimited hardware.
+
+- 🧠 Building **distributed AI infrastructure** — orchestration, routing, multi-provider gateways
+- 📊 Designing **data-driven platforms** on top of time-series and streaming systems
+- 🐳 Shipping everything as **containerised, self-hostable** software
+- 🍓 Making heavy infrastructure run on **constrained hardware**, down to ARM boards
+- 🤝 Contributing to **Portuguese civic tech** and open-source tooling
+- 🌍 I work in **🇵🇹 Portuguese**, **🇬🇧 English**, **🇫🇷 French**, **🇪🇸 Spanish** and **🇮🇹 Italian**
 
 ---
 
@@ -36,19 +39,19 @@ I work across the whole delivery path — writing the application, containerisin
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=js,ts,python,cs,html,css,bash&theme=dark" alt="Languages" />
+<img src="https://skillicons.dev/icons?i=ts,js,python,cs,bash,html,css&theme=dark" alt="Languages" />
 
-**Frameworks & Libraries**
+**Frameworks & Runtimes**
 
-<img src="https://skillicons.dev/icons?i=react,vue,nodejs,dotnet,tailwind&theme=dark" alt="Frameworks" />
+<img src="https://skillicons.dev/icons?i=nodejs,react,nextjs,vue,electron,vite,tailwind,dotnet&theme=dark" alt="Frameworks" />
 
-**DevOps & Infrastructure**
+**Infrastructure & DevOps**
 
-<img src="https://skillicons.dev/icons?i=docker,kubernetes,linux,nginx,githubactions,git&theme=dark" alt="DevOps" />
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,linux,nginx,githubactions,cloudflare,git&theme=dark" alt="Infrastructure" />
 
-**Data & Tools**
+**Data & Messaging**
 
-<img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,kafka,vscode,postman&theme=dark" alt="Tools" />
+<img src="https://skillicons.dev/icons?i=postgres,sqlite,mongodb,redis,kafka&theme=dark" alt="Data" />
 
 </div>
 
@@ -61,48 +64,119 @@ I work across the whole delivery path — writing the application, containerisin
 <tr>
 <td width="50%" valign="top">
 
-### 🐳 kafka-armv7
+### 🧠 AI-Orchestrator
 
-Apache Kafka built and packaged for **ARMv7** devices — Raspberry Pi and similar single-board computers that official images don't cover.
+A self-hosted gateway that pools AI inference across multiple Macs running Ollama, with optional fallback to Anthropic, OpenAI and Bedrock.
 
-`Docker` · `Kafka` · `ARM` · `Shell`
+Drop-in replacement for the Ollama REST API, with round-robin and least-latency routing, health checks, automatic failover, and TimescaleDB-backed analytics.
 
-[**→ Repository**](https://github.com/VivaldiCode/kafka-armv7)
+`TypeScript` · `Fastify` · `React` · `PostgreSQL/TimescaleDB` · `Docker`
+
+[**→ Repository**](https://github.com/VivaldiCode/AI-Orchestrator)
 
 </td>
 <td width="50%" valign="top">
 
-### 🧩 Test-Exads-fullstack
+### 🎙️ voice-gateway
 
-A full-stack application covering the complete path from API to interface, with a structured, production-minded approach.
+A local-first desktop app for talking to a Hermes agent by voice, with push-to-talk and wake-word modes.
 
-`JavaScript` · `Node.js` · `REST`
+Runs speech-to-text and text-to-speech entirely on-device via whisper.cpp and Piper — no API keys required — with optional cloud upgrades for higher quality.
 
-[**→ Repository**](https://github.com/VivaldiCode/Test-Exads-fullstack)
+`Electron` · `React` · `Python` · `WebSocket` · `openWakeWord`
+
+[**→ Repository**](https://github.com/VivaldiCode/voice-gateway)
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🤖 3D-Printed-Robot-Dog
+### 🌍 world-war-3-indicator
 
-A quadruped robot built from 3D-printed parts — where hardware, firmware and a bit of stubbornness meet.
+A modular geopolitical risk index (0–100) composed from 18+ live public data feeds — commodities, VIX, defense equities, ACLED conflict events, GDELT news tone and military signals.
 
-`Robotics` · `3D Printing` · `Embedded`
+Each source publishes a normalised score and the composite redistributes weights when a feed fails, so the index stays interpretable. Situational awareness, explicitly not a forecast.
 
-[**→ Repository**](https://github.com/VivaldiCode/3D-Printed-Robot-Dog)
+`Next.js` · `TypeScript` · `PostgreSQL` · `SQLite` · `Docker`
+
+[**→ Repository**](https://github.com/VivaldiCode/world-war-3-indicator)
 
 </td>
 <td width="50%" valign="top">
 
-### 🎂 age-calculator-app
+### 🐳 kafka-armv7
 
-A Frontend Mentor challenge built in Vue, focused on clean validation logic and accessible, responsive UI.
+Apache Kafka packaged for **ARMv7** — the architecture official images don't publish for.
 
-`Vue` · `CSS` · `Frontend Mentor`
+Brings event streaming to Raspberry Pi and IoT-class hardware. Available straight from Docker Hub as `guiters/kafka-armv7`.
 
-[**→ Repository**](https://github.com/VivaldiCode/age-calculator-app)
+`Docker` · `Kafka` · `ARM` · `Shell`
+
+[**→ Repository**](https://github.com/VivaldiCode/kafka-armv7)
+
+</td>
+</tr>
+</table>
+</div>
+
+---
+
+## 🤝 Helping the community
+
+Open source I contribute to and help maintain — civic tech that serves Portugal, and infrastructure tooling the self-hosting community depends on.
+
+<div align="center">
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🔥 fogospt
+
+[Fogos.pt](https://fogos.pt) — the public platform that tracks active wildfires across Portugal in real time, used by citizens and emergency services during fire season.
+
+`PHP` · `Laravel` · `Node.js` · `Docker`
+
+[**→ Repository**](https://github.com/VivaldiCode/fogospt) · [Upstream](https://github.com/FogosPT/fogospt)
+
+</td>
+<td width="50%" valign="top">
+
+### 🌦️ daily_weather_report
+
+The automation behind **VOST Portugal**'s daily weather bulletins — pulls IPMA data each morning and renders report graphics for the mainland, Azores and Madeira, ready for publication.
+
+`Python` · `IPMA API` · `GitHub Actions`
+
+[**→ Repository**](https://github.com/VivaldiCode/daily_weather_report) · [Upstream](https://github.com/vostpt/daily_weather_report)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🛡️ FlareSolverr
+
+A proxy server that solves Cloudflare and DDoS-GUARD challenges through a headless browser, returning cookies and HTML so downstream tools can keep working.
+
+Multi-architecture, including ARM32 and ARM64.
+
+`Python` · `Selenium` · `Docker`
+
+[**→ Repository**](https://github.com/VivaldiCode/FlareSolverr) · [Upstream](https://github.com/FlareSolverr/FlareSolverr)
+
+</td>
+<td width="50%" valign="top">
+
+### 📡 TP-Link-Archer-C6U
+
+A Python library for programmatic access to 100+ TP-Link and Mercusys routers — status, connected clients, WiFi bands, DHCP reservations, VPN and reboot.
+
+Widely used to bring consumer routers into Home Assistant.
+
+`Python` · `Requests` · `PyCryptodome`
+
+[**→ Repository**](https://github.com/VivaldiCode/TP-Link-Archer-C6U) · [Upstream](https://github.com/AlexandrErohin/TP-Link-Archer-C6U)
 
 </td>
 </tr>
@@ -115,8 +189,21 @@ A Frontend Mentor challenge built in Vue, focused on clean validation logic and 
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=VivaldiCode&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=VivaldiCode&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7" alt="Top languages" />
+<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=VivaldiCode&theme=tokyonight" alt="Profile details" />
+
+<br />
+
+<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=VivaldiCode&theme=tokyonight" alt="Repos per language" />
+<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=VivaldiCode&theme=tokyonight" alt="Most commit language" />
+
+<br />
+
+<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=VivaldiCode&theme=tokyonight" alt="Stats" />
+<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=VivaldiCode&theme=tokyonight&utcOffset=1" alt="Productive time" />
+
+<br /><br />
+
+<img src="https://streak-stats.demolab.com?user=VivaldiCode&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakLabel=36BCF7" width="60%" alt="Streak stats" />
 
 <br /><br />
 
@@ -130,13 +217,30 @@ A Frontend Mentor challenge built in Vue, focused on clean validation logic and 
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=VivaldiCode&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" alt="Trophies" />
-
-<br />
-
-| 🦈 Pull Shark ×3 | 👯 Pair Extraordinaire ×4 | ⚡ Quickdraw | 🤙 YOLO |
-|:---:|:---:|:---:|:---:|
-| 128+ merged PRs | 48 co-authored commits | Closed in under 5 min | Merged without review |
+<table>
+<tr>
+<td align="center" width="25%">
+<img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png" width="72" alt="Pull Shark" /><br />
+<b>Pull Shark ×3</b><br />
+<sub>128+ merged pull requests</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://github.githubassets.com/images/modules/profile/achievements/pair-extraordinaire-default.png" width="72" alt="Pair Extraordinaire" /><br />
+<b>Pair Extraordinaire ×4</b><br />
+<sub>48 co-authored commits — max tier</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png" width="72" alt="Quickdraw" /><br />
+<b>Quickdraw</b><br />
+<sub>Closed in under 5 minutes</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png" width="72" alt="YOLO" /><br />
+<b>YOLO</b><br />
+<sub>Merged without code review</sub>
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -160,7 +264,7 @@ A Frontend Mentor challenge built in Vue, focused on clean validation logic and 
 
 ### 💭 Currently
 
-Deepening **Kubernetes** and **observability**, and maintaining ARM builds of infrastructure tools so they run on hardware that fits in your hand.
+Building distributed **AI inference infrastructure** that runs on hardware you own, and designing **data platforms** that stay honest about their own uncertainty.
 
 <br />
 
